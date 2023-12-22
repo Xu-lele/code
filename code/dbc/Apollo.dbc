@@ -1,0 +1,291 @@
+VERSION "Apollo-AGV_1.4.2-2021-8-18"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ECU HOST_PC
+VAL_TABLE_ Chaiss_Err 1 "Error" 0 "Normal" ;
+VAL_TABLE_ Chaiss_ADS 2 "ADS CAN Recovery" 1 "ADS CAN lost" 0 "nomal" ;
+VAL_TABLE_ LOW_BEAM_STS 1 "OFF" 0 "ON" ;
+VAL_TABLE_ LOW_BEAM_CMD 1 "ON" 0 "OFF" ;
+
+
+BO_ 1310 WheelSpeed_Report: 8 ECU
+ SG_ RR : 48|16@1- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ RL : 32|16@1- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ FR : 16|16@1- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ FL : 0|16@1- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+
+BO_ 1309 VIN_Resp3: 8 ECU
+ SG_ VIN17 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1308 VIN_Resp2: 8 ECU
+ SG_ VIN16 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VIN15 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VIN14 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VIN13 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VIN12 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VIN11 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VIN10 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VIN09 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 272 Throttle_Command: 8 HOST_PC
+ SG_ THROTTLE_PEDAL_EN_CTRL : 0|8@1+ (1,0) [0|1] ""  ECU
+ SG_ THROTTLE_PEDAL_CMD : 8|8@1+ (1,0) [0|100] "%"  ECU
+
+BO_ 273 Brake_Command: 8 HOST_PC
+ SG_ BRAKE_PEDAL_EN_CTRL : 0|8@1+ (1,0) [0|1] ""  ECU
+ SG_ BRAKE_PEDAL_CMD : 8|8@1+ (1,0) [0|100] "%"  ECU
+
+BO_ 274 Steer_Command: 8 HOST_PC
+ SG_ STEER_ANGLE_EN_CTRL : 0|8@1+ (1,0) [0|1] ""  ECU
+ SG_ STEER_ANGLE_CMD : 8|16@1- (0.001,0) [-0.524|0.524] "radian"  ECU
+
+BO_ 275 Turnsignal_Command: 8 HOST_PC
+ SG_ LOW_BEAM_CMD : 8|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ TURN_SIGNAL_CMD : 0|8@1+ (1,0) [0|2] ""  ECU
+
+BO_ 276 Gear_Command: 8 HOST_PC
+ SG_ GEAR_CMD : 0|8@1+ (1,0) [1|4] ""  ECU
+
+BO_ 278 Vehicle_Mode_Command: 8 HOST_PC
+ SG_ VIN_REQ_CMD : 0|1@1+ (1,0) [0|1] ""  ECU
+
+BO_ 1296 Throttle_Status_: 8 ECU
+ SG_ THROTTLE_PEDAL_EN_STS : 0|8@1+ (1,0) [0|2] ""  HOST_PC
+ SG_ THROTTLE_PEDAL_STS : 8|8@1+ (1,0) [0|100] "%"  HOST_PC
+ SG_ DRIVE_MOTOR_ERR : 16|8@1+ (1,0) [0|1] ""  HOST_PC
+ SG_ BATTERY_BMS_ERR : 24|8@1+ (1,0) [0|1] ""  HOST_PC
+
+BO_ 1297 Brake_Status_: 8 ECU
+ SG_ OVERSPD_ENV : 48|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BRAKE_PEDAL_EN_STS : 0|8@1+ (1,0) [0|2] ""  HOST_PC
+ SG_ BRAKE_PEDAL_STS : 8|8@1+ (1,0) [0|100] "%"  HOST_PC
+ SG_ BRAKE_ERR : 16|8@1+ (1,0) [0|1] ""  HOST_PC
+ SG_ EMERGENCY_BTN_ENV : 24|8@1+ (1,0) [0|1] ""  HOST_PC
+ SG_ FRONT_BUMP_ENV : 32|8@1+ (1,0) [0|1] ""  HOST_PC
+ SG_ BACK_BUMP_ENV : 40|8@1+ (1,0) [0|1] ""  HOST_PC
+ SG_ Brake_Light_Actual : 56|1@1+ (1,0) [0|1] ""  HOST_PC
+
+BO_ 1298 Steer_Status_: 8 ECU
+ SG_ STEER_ANGLE_EN_STS : 0|8@1+ (1,0) [0|2] ""  HOST_PC
+ SG_ STEER_ANGLE_STS : 8|16@1- (0.001,0) [-0.524|0.524] "radian"  HOST_PC
+ SG_ STEER_ERR : 24|8@1+ (1,0) [0|1] ""  HOST_PC
+ SG_ SENSOR_ERR : 32|8@1+ (1,0) [0|1] ""  HOST_PC
+
+BO_ 1299 Turnsignal_Status_: 8 ECU
+ SG_ LOW_BEAM_STS : 8|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ TURN_SIGNAL_STS : 0|8@1+ (1,0) [0|2] ""  HOST_PC
+
+BO_ 1300 Gear_Status: 8 ECU
+ SG_ GEAR_STS : 0|8@1+ (1,0) [1|4] ""  HOST_PC
+
+BO_ 1301 ECU_Status_1: 8 ECU
+ SG_ CTRL_STS : 32|8@1+ (1,0) [0|1] ""  HOST_PC
+ SG_ CHASSIS_STS : 40|8@1+ (1,0) [0|255] ""  HOST_PC
+ SG_ CHASSIS_ADS_ERR : 48|2@1+ (1,0) [0|2] ""  HOST_PC
+ SG_ CHASSIS_BMS_CAN : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CHASSIS_EHB_CAN : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CHASSIS_EHB_ERR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CHASSIS_EPS_CAN : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CHASSIS_EPS_ERR : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CHASSIS_HW_Lost : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CHASSIS_MCU_CAN : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CHASSIS_MCU_ERR : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SPEED : 0|16@1- (0.01,0) [-327.68|327.67] "m/s"  HOST_PC
+ SG_ ACC_SPEED : 16|16@1- (0.001,0) [0|0] "m/s^2"  HOST_PC
+
+BO_ 1302 ECU_Status_2: 8 ECU
+ SG_ BATTERY_SOC : 0|8@1+ (1,0) [0|100] "%"  HOST_PC
+ SG_ BATTERY_CAPACITY : 8|8@1+ (1,0) [0|100] "Ah"  HOST_PC
+ SG_ BATTERY_VOLTAGE : 16|16@1+ (0.1,0) [0|80] "V"  HOST_PC
+ SG_ BATTERY_CURRENT : 32|16@1- (0.1,0) [-60|60] "A"  HOST_PC
+ SG_ BATTERY_TEMPERATURE : 48|16@1- (1,0) [-40|110] ""  HOST_PC
+
+BO_ 1307 VIN_Resp1: 8 ECU
+ SG_ VIN08 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN07 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN06 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN05 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN04 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN03 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN02 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN01 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+
+
+CM_ BU_ ECU "Electronic Control Unit (Kimuos-G7-AGV Chassis)";
+CM_ BU_ HOST_PC "Apollo (IPC)";
+CM_ BO_ 1310 "AGV status 4: Ultrasound status ext";
+CM_ SG_ 1310 RR "wheel speed rear right";
+CM_ SG_ 1310 RL "wheel speed rear left";
+CM_ SG_ 1310 FR "wheel speed front right";
+CM_ SG_ 1310 FL "wheel speed front left";
+CM_ BO_ 1309 "VIN Respons: VIN01-VIN08";
+CM_ SG_ 1309 VIN17 "VIN Response";
+CM_ BO_ 1308 "VIN Respons: VIN01-VIN08";
+CM_ SG_ 1308 VIN16 "VIN Response";
+CM_ SG_ 1308 VIN15 "VIN Response";
+CM_ SG_ 1308 VIN14 "VIN Response";
+CM_ SG_ 1308 VIN13 "VIN Response";
+CM_ SG_ 1308 VIN12 "VIN Response";
+CM_ SG_ 1308 VIN11 "VIN Response";
+CM_ SG_ 1308 VIN10 "VIN Response";
+CM_ SG_ 1308 VIN09 "VIN Response";
+CM_ BO_ 272 "Vehicle open-loop control command: THROTTLE_PEDAL_CMD";
+CM_ SG_ 272 THROTTLE_PEDAL_EN_CTRL "throttle pedal enable bit(Command)";
+CM_ SG_ 272 THROTTLE_PEDAL_CMD "Percentage of throttle pedal(Command)";
+CM_ BO_ 273 "Vehicle open-loop control command: BRAKE_PEDAL_CMD";
+CM_ SG_ 273 BRAKE_PEDAL_EN_CTRL "brake pedal enable bit(Command)";
+CM_ SG_ 273 BRAKE_PEDAL_CMD "Percentage of brake pedal(Command)";
+CM_ BO_ 274 "Vehicle open-loop control command: STEER_ANGLE_CMD";
+CM_ SG_ 274 STEER_ANGLE_EN_CTRL "steering angle enable bit(Command)";
+CM_ SG_ 274 STEER_ANGLE_CMD "Current steering angle(Command)";
+CM_ BO_ 275 "Vehicle open-loop control command: TURN_SIGNAL_CMD";
+CM_ SG_ 275 LOW_BEAM_CMD "Lighting control(Command)";
+CM_ SG_ 275 TURN_SIGNAL_CMD "Lighting control(Command)";
+CM_ BO_ 276 "Vehicle open-loop control command: GEAR_CMD";
+CM_ SG_ 276 GEAR_CMD "PRND control(Command)";
+CM_ BO_ 278 "Request VIN command: VIN_REQ_CMD";
+CM_ SG_ 278 VIN_REQ_CMD "Request VIN(Command)";
+CM_ BO_ 1296 "Vehicle open-loop control status: THROTTLE_PEDAL_STS";
+CM_ SG_ 1296 THROTTLE_PEDAL_EN_STS "throttle pedal enable bit(Status)";
+CM_ SG_ 1296 THROTTLE_PEDAL_STS "Percentage of throttle pedal(Status)";
+CM_ BO_ 1297 "Vehicle open-loop control status: BRAKE_PEDAL_STS";
+CM_ SG_ 1297 BRAKE_PEDAL_EN_STS "brake pedal enable bit(Status)";
+CM_ SG_ 1297 BRAKE_PEDAL_STS "Percentage of brake pedal(Status)";
+CM_ BO_ 1298 "Vehicle open-loop control status: STEER_ANGLE_STS";
+CM_ SG_ 1298 STEER_ANGLE_EN_STS "steering angle enable bit(Status)";
+CM_ SG_ 1298 STEER_ANGLE_STS "Current steering angle(Status)";
+CM_ BO_ 1299 "Vehicle open-loop control status: TURN_SIGNAL_STS";
+CM_ SG_ 1299 LOW_BEAM_STS "Lighting control(Status)";
+CM_ SG_ 1299 TURN_SIGNAL_STS "Lighting control(Status)";
+CM_ BO_ 1300 "Vehicle open-loop control status: GEAR_STS";
+CM_ SG_ 1300 GEAR_STS "PRND control(Status)";
+CM_ BO_ 1301 "AGV status 1: speed, accelerated speed, out of control, chassis status, chassis error code";
+CM_ SG_ 1301 CTRL_STS "Current Auto-mode state (Chassis status)";
+CM_ SG_ 1301 CHASSIS_STS "Current chassis state (Chassis status)";
+CM_ SG_ 1301 CHASSIS_ADS_ERR "Chassis error code (Chassis status)";
+CM_ SG_ 1301 SPEED "Current speed (Steering status)";
+CM_ SG_ 1301 ACC_SPEED "Current acceleration (Steering status)";
+CM_ BO_ 1302 "AGV status 2: BMS status";
+CM_ SG_ 1302 BATTERY_SOC "Percentage of battery remaining (BMS status)";
+CM_ SG_ 1302 BATTERY_CAPACITY "Battery full capacity (BMS status)";
+CM_ SG_ 1302 BATTERY_VOLTAGE "Current battery voltage (BMS status)";
+CM_ SG_ 1302 BATTERY_CURRENT "Current battery current (BMS status)";
+CM_ SG_ 1302 BATTERY_TEMPERATURE "Current battery temperature (BMS status)";
+CM_ BO_ 1307 "VIN Respons: VIN01-VIN08";
+CM_ SG_ 1307 VIN08 "VIN Response";
+CM_ SG_ 1307 VIN07 "VIN Response";
+CM_ SG_ 1307 VIN06 "VIN Response";
+CM_ SG_ 1307 VIN05 "VIN Response";
+CM_ SG_ 1307 VIN04 "VIN Response";
+CM_ SG_ 1307 VIN03 "VIN Response";
+CM_ SG_ 1307 VIN02 "VIN Response";
+CM_ SG_ 1307 VIN01 "VIN Response";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "FixedPeriodic","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 100000;
+BA_DEF_  "NetworkSpeed" ENUM  "500kBits/s";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "NetworkSpeed" "500kBits/s";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "GenMsgSendType" BO_ 1310 0;
+BA_ "GenMsgCycleTime" BO_ 1310 20;
+BA_ "GenMsgCycleTime" BO_ 1309 500;
+BA_ "GenMsgSendType" BO_ 1309 0;
+BA_ "GenMsgCycleTime" BO_ 1308 500;
+BA_ "GenMsgSendType" BO_ 1308 0;
+BA_ "GenMsgSendType" BO_ 272 0;
+BA_ "GenMsgCycleTime" BO_ 272 20;
+BA_ "GenMsgSendType" BO_ 273 0;
+BA_ "GenMsgCycleTime" BO_ 273 20;
+BA_ "GenMsgSendType" BO_ 274 0;
+BA_ "GenMsgCycleTime" BO_ 274 20;
+BA_ "GenMsgSendType" BO_ 275 0;
+BA_ "GenMsgCycleTime" BO_ 275 20;
+BA_ "GenMsgSendType" BO_ 276 0;
+BA_ "GenMsgCycleTime" BO_ 276 20;
+BA_ "GenMsgSendType" BO_ 278 0;
+BA_ "GenMsgCycleTime" BO_ 278 500;
+BA_ "GenMsgSendType" BO_ 1296 0;
+BA_ "GenMsgCycleTime" BO_ 1296 20;
+BA_ "GenMsgSendType" BO_ 1297 0;
+BA_ "GenMsgCycleTime" BO_ 1297 20;
+BA_ "GenMsgSendType" BO_ 1298 0;
+BA_ "GenMsgCycleTime" BO_ 1298 20;
+BA_ "GenMsgSendType" BO_ 1299 0;
+BA_ "GenMsgCycleTime" BO_ 1299 20;
+BA_ "GenMsgSendType" BO_ 1300 0;
+BA_ "GenMsgCycleTime" BO_ 1300 20;
+BA_ "GenMsgSendType" BO_ 1301 0;
+BA_ "GenMsgCycleTime" BO_ 1301 20;
+BA_ "GenMsgSendType" BO_ 1302 0;
+BA_ "GenMsgCycleTime" BO_ 1302 20;
+BA_ "GenMsgSendType" BO_ 1307 0;
+BA_ "GenMsgCycleTime" BO_ 1307 500;
+VAL_ 272 THROTTLE_PEDAL_EN_CTRL 1 "ENABLE" 0 "DISABLE" ;
+VAL_ 273 BRAKE_PEDAL_EN_CTRL 1 "ENABLE" 0 "DISABLE" ;
+VAL_ 274 STEER_ANGLE_EN_CTRL 1 "ENABLE" 0 "DISABLE" ;
+VAL_ 275 LOW_BEAM_CMD 1 "ON" 0 "OFF" ;
+VAL_ 275 TURN_SIGNAL_CMD 3 "Hazard_Warning_Lampsts" 2 "RIGHT" 1 "LEFT" 0 "NONE" ;
+VAL_ 276 GEAR_CMD 4 "DRIVE" 3 "NEUTRAL" 2 "REVERSE" 1 "PARK" ;
+VAL_ 278 VIN_REQ_CMD 1 "VIN_req_enable" 0 "VIN_req_disable" ;
+VAL_ 1296 THROTTLE_PEDAL_EN_STS 1 "ENABLE" 0 "DISABLE" 2 "TAKEOVER" ;
+VAL_ 1296 DRIVE_MOTOR_ERR 0 "NOERR" 1 "DRV_MOTOR_ERR" ;
+VAL_ 1296 BATTERY_BMS_ERR 0 "NOERR" 1 "BATTERY_ERR" ;
+VAL_ 1297 OVERSPD_ENV 0 "NOENV" 1 "OVERSPEED_ENV" ;
+VAL_ 1297 BRAKE_PEDAL_EN_STS 1 "ENABLE" 0 "DISABLE" 2 "TAKEOVER" ;
+VAL_ 1297 BRAKE_ERR 0 "NOERR" 1 "BRAKE_SYSTEM_ERR" ;
+VAL_ 1297 EMERGENCY_BTN_ENV 0 "NOENV" 1 "EMERGENCY_BUTTON_ENV" ;
+VAL_ 1297 FRONT_BUMP_ENV 0 "NOENV" 1 "FRONT_BUMPER_ENV" ;
+VAL_ 1297 BACK_BUMP_ENV 0 "NOENV" 1 "BACK_BUMPER_ENV" ;
+VAL_ 1297 Brake_Light_Actual 0 "BrakeLight_OFF" 1 "BrakeLight_ON" ;
+VAL_ 1298 STEER_ANGLE_EN_STS 1 "ENABLE" 0 "DISABLE" 2 "TAKEOVER" ;
+VAL_ 1298 STEER_ERR 0 "NOERR" 1 "STEER_MOTOR_ERR" ;
+VAL_ 1298 SENSOR_ERR 0 "NOERR" 1 "STEER_SENSOR_ERR" ;
+VAL_ 1299 LOW_BEAM_STS 1 "ON" 0 "OFF" ;
+VAL_ 1299 TURN_SIGNAL_STS 3 "Hazard_Warning_Lampsts_ON" 2 "RIGHT" 1 "LEFT" 0 "NONE" ;
+VAL_ 1300 GEAR_STS 4 "DRIVE" 3 "NEUTRAL" 2 "REVERSE" 1 "PARK" ;
+VAL_ 1301 CTRL_STS 1 "Under control" 0 "Out of control" ;
+VAL_ 1301 CHASSIS_ADS_ERR 2 "ADS CAN Recovery" 1 "ADS CAN lost" 0 "nomal" ;
+VAL_ 1301 CHASSIS_BMS_CAN 1 "Error" 0 "Normal" ;
+VAL_ 1301 CHASSIS_EHB_CAN 1 "Error" 0 "Normal" ;
+VAL_ 1301 CHASSIS_EHB_ERR 1 "Error" 0 "Normal" ;
+VAL_ 1301 CHASSIS_EPS_CAN 1 "Error" 0 "Normal" ;
+VAL_ 1301 CHASSIS_EPS_ERR 1 "Error" 0 "Normal" ;
+VAL_ 1301 CHASSIS_HW_Lost 1 "Error" 0 "Normal" ;
+VAL_ 1301 CHASSIS_MCU_CAN 1 "Error" 0 "Normal" ;
+VAL_ 1301 CHASSIS_MCU_ERR 1 "Error" 0 "Normal" ;
+

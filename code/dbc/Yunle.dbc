@@ -1,0 +1,328 @@
+VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY/4/%%%/4/'%**4YYY///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IBC ADAS TPMS Compressor HVAC SCU TBOX EPS SAS_SW ECAS BSU_Cell_1 Diagnostics Motor_Control VCU
+VAL_TABLE_ Heartbeat 127 "System in pre-operational mode" 5 "System in operational mode" 0 "boot-up" ;
+VAL_TABLE_ OperationValues 128 "Return to pre-operational" 1 "Enable operational" ;
+VAL_TABLE_ Fault_Codes 18575 "Sensorless Startup" 17868 "Mains Over Voltage" 19585 "HVIL loop Broken" 22401 "CANopen Anon EMCY level 5" 22337 "Invalid power Frame rating" 21711 "IGBT M3 High driver" 21710 "IGBT M3 Low driver" 21709 "IGBT M2 High driver" 21708 "IGBT M2 Low driver" 21707 "IGBT M1 High driver" 21706 "Pump FET s/c, IGBT M1 Low driver" 21705 "MOSFET short circuit checks" 21704 "MOSFET s/c M3 to B-" 21703 "MOSFET s/c M3 to B+" 21702 "MOSFET s/c M2 to B-" 21701 "MOSFET s/c M2 to B+" 21700 "MOSFET s/c M1 to B-" 21699 "MOSFET s/c M1 to B+" 21698 "Power Frame Fault" 21697 "PF Overvoltage" 21570 "Calibration Fault" 21569 "Incompatible hardware version" 21377 "CANopen EMCY level 4" 21318 "Internal Supply Out of Range" 21317 "Sheduler Stack Overflow" 21316 "DSP SPI comms Fault" 21315 "Fault List Overflow" 21314 "OSC watchdog Fault" 21313 "Invalid DSP protocol" 21274 "Ren Protocol" 21273 "Mtr Slave in wrong state" 21272 "SDO Bad Error Number" 21271 "SDO Bad SRC" 21270 "SDO Unknown" 21269 "SDO Send Error" 21268 "SDO Len Error" 21267 "SDO Rec Error" 21266 "SDO Toggle Error" 21265 "SDO State Error" 21264 "SDO Abort Error" 21263 "SDO Timeout Error" 21262 "SDO HDL Error" 21261 "CAN ESTAT set" 21260 "CANopen salve in wrong state" 21259 "CANopen Heartbeat Failed" 21258 "Short PDO Recieved" 21257 "Node guarding Failed" 21256 "CAN Off bus" 21255 "CAN overrun" 21254 "HPTX queue overrun" 21253 "HPRX queue overrun" 21252 "LPTX queue overrun" 21251 "LPRX queue overrun" 21250 "Bootup not recieved" 21249 "CANbus Fault" 21191 "Vcap Over Voltage" 21190 "di/dt Fault" 21189 "Encoder Alignment Severe" 21188 "Motor Overspeed Fault" 21187 "Current Control Fault" 21186 "Motor Over Current" 21185 "Encoder Fault" 20993 "Heatsink Overtemp" 20931 "KL 15/30 too High" 20930 "Capacitor Precharge Failure" 20929 "Power Supply Interrupt" 20872 "AOut short Circuit" 20871 "AOut Under Current" 20870 "AOut Over Temperature" 20869 "AOut Off with FS" 20868 "AOut on without FS" 20867 "Analogue Output Over Current" 20866 "Analogue Input Wire Off" 20865 "Digital Input Wire Off" 20803 "VERLOG" 20802 "Ren Signal" 20801 "BeltLoader Fault" 20738 "Line Contactro Welded" 20737 "Line Contactor O/C" 20609 "Invalid Steer Switches" 20550 "Voltage Auto Config Error" 20549 "Auto Configuration Fault" 20548 "Dynamic Range Error" 20547 "Static Range Error" 20546 "VPDO out of range" 20545 "BAD NVM data" 20353 "CANopen Anon EMCY level 3" 20311 "Motor Stalled" 20310 "Motor in Wrong Direction" 20309 "DSP Parameter Error" 20308 "AutoZero Range Error" 20307 "App Manager SS " 20306 "DSP Comms Error" 20305 "DSP Not Detected" 20304 "New Power Frame Detected" 20303 "Trac APP SS Error" 20302 "DMC SS Error" 20301 "VA SS Error" 20300 "OBD SS Error" 20299 "LCP SS Error" 20298 "LCM SS Error" 20297 "GIO SS Error" 20296 "I/O SS Error" 20295 "DSP Heartbeat Error" 20294 "Sheduler Error" 20293 "Queue Error" 20292 "Timer Failed" 20291 "General DSP Error" 20290 "Out Of Memory" 20289 "Internal Fault" 20226 "EMCY send Failed" 20225 "Unexpected Slave State" 20162 "Pulsing Disabled" 20161 "Can't Establush field current" 20097 "RPDO Timeout (severe)" 19907 "Power Supply Critical" 19779 "Motor Stalled" 19778 "Motor Open Circuit Fault" 19777 "Motor Isolation Fault" 19716 "Circuit Breaker Timeout" 19715 "DC Link Collapsed" 19714 "Circuit Breaker Welded" 19713 "Circuit Breaker Open" 19521 "Too Many Slaves" 19329 "CANopen EMCY level 2" 19203 "IO Data Error" 19202 "Ren Data" 19201 "CANbus Off (drive inhibit)" 19073 "RPDO Timeout (drive inhibit)" 18945 "Cutback" 18882 "Entering Cutback" 18819 "Direction Change" 18818 "E-Brake Wire Off" 18817 "Throttle Fault" 18754 "PST Fault" 18753 "Motor Overspeed" 18574 "Mom Dir Fault" 18573 "Belly Fault" 18572 "Tilt Sensor Fault" 18571 "Illegal Mode Fault" 18570 "Traction inhibit Fault" 18569 "Pothole Fault" 18568 "Raised and Tilted Fault" 18567 "Overload Fault" 18566 "Inch Fault" 18565 "FS1 Recycle Fault" 18564 "Sequence Fault" 18563 "SRO Fault" 18562 "Two Direction Fault" 18561 "Seat Fault" 18369 "Vehicle Service required" 18307 "24V Supply High" 18306 "24V Supplu Low" 18305 "CANopen Anon EMCY level 1" 18242 "Internal Supply Out of range" 18241 "Sheduler Stack Overflow warning" 18177 "CAN Warning" 18118 "Encoder PLL Deactivated Warning" 18117 "Stator Resistance Error" 18116 "Motor Pull-Out Warning" 18115 "Fault Ride through" 18114 "SinCos Tracking warning" 18113 "Encoder Alignment warning" 18051 "RPDO Timeout (warning)" 18050 "Io can't init" 18049 "Unit in Pre-Op" 17924 "Motor too Cold" 17923 "Motor in Thermal Cutback" 17922 "Device too hot" 17921 "Device too cold" 17870 "Vcap Vkey Diff" 17869 "KL15/30 too low" 17867 "Mains Under voltage" 17866 "Motor in high voltage cutback" 17865 "Motor in low voltage cutback" 17864 "Vcap Above rated max" 17863 "Vbat Above rated max" 17862 "Vbat Below rated min" 17861 "High Capacitor Cut" 17860 "High Battery Cut" 17859 "Low Battery Cut" 17858 "BDI Cutout" 17857 "BDI warning" 17802 "Seat warning" 17801 "Analogue Supply warning" 17800 "AOut Short Circuit (warn)" 17799 "AOut Under Current (warn)" 17798 "AOut Over Temperature (warn)" 17797 "AOut Off with Failsafe [warn]" 17796 "AOut Over Current [warn]" 17795 "Safety Case 2" 17794 "Safety Case 1" 17793 "Throttle Fault (Warn)" 17741 "Electrolyte Cutout Level" 17740 "Electrolyte Level Low" 17739 "MOSFET s/c test Waiting" 17738 "Bridge Enable Delayed" 17737 "Pulsed Enable" 17736 "Steer Sensor Warning" 17735 "Tow Mode" 17734 "No Motor Speed Signal" 17733 "Isolation Fault" 17732 "Pump Current Low" 17731 "Hydraulic Fault" 17730 "Low Oil / Device test waiting" 17729 "Fan Fault" 17537 "Handbrake Fault" ;
+
+
+BO_ 1793 Hardware_inpute: 8 Vector__XXX
+ SG_ HarwareGearCmd : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ HarwareTargetSpd : 52|10@1- (0.1,0) [-51.2|51.1] "" Vector__XXX
+ SG_ hardware_input_Analog_Weight_V : 8|8@1- (0.01,0) [0|5.55] "V" Vector__XXX
+ SG_ hardware_Foot_brake_input : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ hardware_input_Dec : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ hardware_input_Acc : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SCU_Target_Speed : 42|10@1- (0.1,0) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ GW_Target_Speed : 32|10@1- (0.1,0) [-51.2|51.1] "kmph" Vector__XXX
+ SG_ DrvModFlag : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ gearcmd : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ hardware_input_ignition : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ hardware_input_KeyOn : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ hardware_input_R : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ hardware_input_N : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ hardware_input_D : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 112 SAS_SM_input_vcu70: 8 SAS_SW
+ SG_ SAS_Trim_Sts : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SAS_Message_Counter : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SAS_Failure_Sts : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SAS_Checksum : 36|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SAS_Calibration_Sts : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SAS_Angle_Speed : 16|8@1- (0.1,0) [0|0] "deg/s" Vector__XXX
+ SG_ SAS_Angle : 7|16@0- (0.1,0) [-3276.8|3276.7] "deg" Vector__XXX
+
+BO_ 392 RHS1_Torque_Feedback: 8 Vector__XXX
+ SG_ CS_Torque : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SEQ_Torque : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DC_Link_Current : 32|16@1- (1,0) [-32768|32767] "A" Vector__XXX
+ SG_ Speed_Measured : 16|16@1- (1,0) [0|0] "RPM" Vector__XXX
+ SG_ Torque_Measured : 0|16@1- (0.0625,0) [0|0] "Nm" Vector__XXX
+
+BO_ 384 RHC1_Demands: 8 Vector__XXX
+ SG_ CS_Command1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SEQ_Command1 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Torque_Traction_Limit : 32|16@1- (0.0625,0) [0|0] "Nm" Vector__XXX
+ SG_ ControlWord : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Torque_Request : 0|16@1- (0.0625,0) [0|0] "Nm" Vector__XXX
+
+BO_ 376 LHS1_Torque_Feedback: 8 Motor_Control
+ SG_ CS_Torque : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SEQ_Torque : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DC_Link_Current : 32|16@1- (1,0) [-32768|32767] "A" Vector__XXX
+ SG_ Speed_Measured : 16|16@1- (1,0) [0|0] "RPM" Vector__XXX
+ SG_ Torque_Measured : 0|16@1- (0.0625,0) [0|0] "Nm" Vector__XXX
+
+BO_ 368 LHC1_Demands: 8 VCU
+ SG_ CS_Command1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SEQ_Command1 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Torque_Traction_Limit : 32|16@1- (0.0625,0) [-2048|2047.9375] "Nm" Vector__XXX
+ SG_ ControlWord : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Torque_Request : 0|16@1- (0.0625,0) [-2048|2047.9375] "Nm" Vector__XXX
+
+BO_ 1810 ChrgASDebug: 8 VCU
+ SG_ ASRRHtCmd : 53|10@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ ASRLHtCmd : 43|10@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ ASFRHtCmd : 33|10@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ ASFLHtCmd : 23|10@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ ChrgVolCmd : 3|10@1+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ ChrgEnCmd : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ChrgCurCmd : 13|10@1+ (0.1,0) [0|0] "A" Vector__XXX
+ SG_ MainRelayClsCmd : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PreRelayClsCmd : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1813 DrvDebug: 8 VCU
+ SG_ VelKp : 34|10@1+ (0.1,0) [0|102.3] "" Vector__XXX
+ SG_ VelKi : 44|10@1+ (0.01,0) [0|10.23] "" Vector__XXX
+ SG_ VelKd : 54|10@1+ (0.01,0) [0|10.23] "" Vector__XXX
+ SG_ VelCmd : 0|10@1- (0.1,0) [-51.2|51.1] "km/h" Vector__XXX
+ SG_ TqCmd : 10|10@1- (1,0) [-512|511] "Nm" Vector__XXX
+ SG_ SASCmd : 20|12@1- (0.1,0) [-204.8|204.7] "deg" Vector__XXX
+
+BO_ 1808 DebugEn: 8 VCU
+ SG_ PIDDebugEn : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SASDebugEn : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ChrgerDebugEn : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HalLedCmd : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FaultResetCmd : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LightDebugEn : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ASDebugEn : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VelDebugEn : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TqDebugEn : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RTLedCmd : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RFLedCmd : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PosLedCmd : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LTLedCmd : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LBLedCmd : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HornCmd : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HBLedCmd : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMSDebugEn : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1698 HLU_Sts: 8 Vector__XXX
+ SG_ HLU_Work_Status : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HLU_Checksum : 1|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1670 GPS_Sts_2: 8 TBOX
+ SG_ GPS_Longitude : 0|32@1+ (1E-007,0) [0|90] "" Vector__XXX
+ SG_ GPS_Latitude : 32|32@1+ (1E-007,0) [0|180] "" Vector__XXX
+
+BO_ 1669 GPS_Sts_1: 8 TBOX
+ SG_ GPS_Speed : 8|16@1+ (0.1,0) [0|200] "km/h"  VCU
+ SG_ GPS_Num_Of_Satellite : 40|8@1+ (1,0) [0|60] ""  VCU
+ SG_ GPS_Northern_or_Southern : 1|1@1+ (1,0) [0|0] ""  VCU
+ SG_ GPS_Location_Sts : 0|1@1+ (1,0) [0|0] ""  VCU
+ SG_ GPS_East_or_West : 2|1@1+ (1,0) [0|0] ""  VCU
+ SG_ GPS_Direction : 24|16@1+ (1,0) [0|359] ""  VCU
+ SG_ GPS_Checksum : 56|8@1+ (1,0) [0|0] ""  VCU
+
+BO_ 1666 TBOX_Sts: 8 TBOX
+ SG_ TBOXI_Checksum : 56|8@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_WIFIAP_Work_Status : 3|2@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_WIFI_Signal_Level : 16|8@1+ (1,0) [0|100] ""  VCU
+ SG_ TBOX_Ignition_Sts : 0|2@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_ICAN_Data_Link_Status : 40|2@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_General_Fail_Status : 2|1@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_ExtLamp_Controller_Status : 46|1@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_Door_Controller_Status : 47|1@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_Cloud_Mirror_Status : 44|1@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_Cameral_Controller_Status : 45|1@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_BlueTooth_work_Status : 5|2@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_BlueTooth_Signal_Level : 24|8@1+ (1,0) [0|100] ""  VCU
+ SG_ TBOX_AirCondition_Status : 42|1@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_AirCleaner_Status : 43|1@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_4G_Work_Status : 7|1@1+ (1,0) [0|0] ""  VCU
+ SG_ TBOX_4G_Signal_Level : 8|8@1+ (1,0) [0|100] ""  VCU
+
+BO_ 256 PadGateWay: 8 TBOX
+ SG_ GW_Ebrake : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GW_Target_Speed : 40|10@1+ (0.1,0) [0|102.3] "kmph" Vector__XXX
+ SG_ GW_Steering_Wheel_Angle : 8|16@1- (0.1,0) [-3276.8|3276.7] ""  VCU
+ SG_ GW_ShiftLevel_Req : 0|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_Right_Turn_Light_Req : 26|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_RearFogLight_Req : 36|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_Position_Light_Req : 30|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_LowBeam_Req : 32|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_Left_Turn_Light_Req : 24|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_Horn_Req : 38|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_HighBeam_Req : 34|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_Hazard_Light_Req : 28|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_Drive_Mode_Req : 6|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_Brake_Level : 4|2@1+ (1,0) [0|3] ""  VCU
+ SG_ GW_ACC_Level : 2|2@1+ (1,0) [0|3] ""  VCU
+
+BO_ 288 SCU: 8 SCU
+ SG_ GW_Horn_Req : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GW_RearFogLight_Req : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GW_HighBeam_Req : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GW_LowBeam_Req : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GW_Position_Light_Req : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GW_Hazard_Light_Req : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GW_Right_Turn_Light_Req : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ GW_Left_Turn_Light_Req : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SCU_Brk_En : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SCU_Target_Speed : 24|9@1+ (0.1,0) [0|51] "m/s"  VCU
+ SG_ SCU_Steering_Wheel_Angle : 8|16@1- (0.1,0) [-3276.8|3276.7] ""  VCU
+ SG_ SCU_ShiftLevel_Req : 0|2@1+ (1,0) [0|3] ""  VCU
+ SG_ SCU_Drive_Mode_Req : 6|2@1+ (1,0) [0|3] ""  VCU
+ SG_ SCU_Brake_Mode : 4|2@1+ (1,0) [0|3] ""  VCU
+ SG_ SCU_ACC_Mode : 2|2@1+ (1,0) [0|3] ""  VCU
+
+BO_ 682 BMU_System_Info: 8 VCU
+ SG_ BSU_Insulation_Resistance : 48|16@1+ (1,0) [0|0] ""  TBOX
+ SG_ BMU_Sys_Status : 40|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BMU_Sys_SOC : 32|8@1+ (0.004,0) [0|1] ""  TBOX
+ SG_ BMU_PreCharge_Status : 43|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BMU_Num_BSU : 45|3@1+ (1,0) [0|6] ""  TBOX
+ SG_ BMU_Charge_Status : 42|1@1+ (1,0) [0|0] ""  TBOX
+ SG_ BMU_Battery_Out_Voltage : 0|16@1- (0.1,0) [-3276.8|3276.7] "V"  TBOX
+ SG_ BMU_Battery_Out_Current : 16|16@1+ (0.1,-400) [-400|400] "A"  TBOX
+
+BO_ 1186 BSU_Cell_1_Max_Min_Voltage: 8 VCU
+ SG_ BSU_Cell_1_Min_Voltage_Num : 48|8@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Min_Voltage : 16|16@1+ (0.001,0) [0|5] ""  TBOX
+ SG_ BSU_Cell_1_Max_Voltage_Num : 32|8@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Max_Voltage : 0|16@1+ (0.001,0) [0|5] "V"  TBOX
+
+BO_ 672 BSU_Cell_1_Diag: 8 VCU
+ SG_ BSU_Cell_1_Insulation_Fade : 24|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Diag_Message_Counter : 56|8@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Det_Tem : 20|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Det_CellVol : 22|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_SOC_Low : 18|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_SOC_High : 16|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Discharge_OC : 12|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Charge_OC : 14|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Sum_Voltage_Low : 10|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Sum_Voltage_High : 8|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Tem_Low : 6|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Tem_High : 4|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Voltage_Low : 2|2@1+ (1,0) [0|0] ""  TBOX
+ SG_ BSU_Cell_1_Voltage_High : 0|2@1+ (1,0) [0|0] ""  TBOX
+
+BO_ 324 EPS_Status: 8 EPS
+ SG_ EPS_Angle : 0|16@1- (0.1,0) [-3276.8|3276.7] ""  VCU
+ SG_ EPS_System_Status : 16|2@1+ (1,0) [0|3] ""  VCU
+ SG_ EPS_Fault_Code : 24|16@1+ (1,0) [0|65535] ""  VCU
+
+BO_ 340 CCU_Req: 8 VCU
+ SG_ CCU_Break_Pressure_Req_Val_ATM : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CCU_Break_Pressure_Req : 40|16@1+ (0.01,0) [0|10] "MPa" Vector__XXX
+ SG_ CCU_IBC_HP_pressure : 24|16@1+ (0.01,0) [0|400] "Mpa" Vector__XXX
+ SG_ CCU_Break_Pressure_Req_Val : 56|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CCU_Torque_Req_Invaild : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CCU_Torque_Req : 0|16@1+ (1,0) [0|80] "Nm" Vector__XXX
+
+BO_ 338 CCU_SAS_Info: 8 SAS_SW
+ SG_ SAS_Trim_Sts : 26|1@1+ (1,0) [0|0] ""  ECAS,VCU
+ SG_ SAS_Message_Counter : 32|4@1+ (1,0) [0|15] ""  ECAS,VCU
+ SG_ SAS_Failure_Sts : 24|1@1+ (1,0) [0|0] ""  ECAS,VCU
+ SG_ SAS_Checksum : 36|4@1+ (1,0) [0|0] ""  ECAS,VCU
+ SG_ SAS_Calibration_Sts : 25|1@1+ (1,0) [0|0] ""  ECAS,VCU
+ SG_ SAS_Angle_Speed : 16|8@1- (0.1,0) [0|0] "deg/s"  ECAS,VCU
+ SG_ SAS_Angle : 0|16@1- (0.1,0) [-3276.8|3276.7] ""  ECAS,VCU
+
+BO_ 81 CCU_Status: 8 VCU
+ SG_ Position_Light_Sts : 59|1@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ Total_Odometer : 36|20@1+ (0.1,0) [0|1048575] ""  SCU,TBOX
+ SG_ Steering_Wheel_Direction : 7|1@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ Right_Turn_Light_Sts : 57|1@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ RearFog_Sts : 62|1@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ LowBeam_Sts : 60|1@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ Left_Turn_Light_Sts : 56|1@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ Horn_Sts : 63|1@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ HighBeam_Sts : 61|1@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ Hazard_Light_Sts : 58|1@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ CCU_Vehicle_Speed : 20|9@1+ (0.1,0) [0|51] "m/s"  SCU,TBOX
+ SG_ CCU_Steering_Wheel_Angle : 8|12@1- (0.1,0) [-204.8|204.7] ""  SCU,TBOX
+ SG_ CCU_ShiftLevel_Sts : 0|2@1+ (1,0) [0|3] ""  SCU,TBOX
+ SG_ CCU_P_Sts : 2|1@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ CCU_Ignition_Sts : 3|2@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ CCU_Drive_Mode : 29|3@1+ (1,0) [0|3] ""  SCU,TBOX
+ SG_ CCU_Brake_Level : 34|2@1+ (1,0) [0|0] ""  SCU,TBOX
+ SG_ CCU_ACC_Level : 32|2@1+ (1,0) [0|0] ""  SCU,TBOX
+
+
+
+CM_ BU_ Motor_Control "Torque generating inverter";
+CM_ BU_ VCU "Central vehicle control unit, responsible for generating torque demands for the inverter";
+CM_ SG_ 392 CS_Torque "Torque message checksum";
+CM_ SG_ 392 SEQ_Torque "Torque message sequence counter";
+CM_ SG_ 392 DC_Link_Current "Net current flow measured by the inverter";
+CM_ SG_ 392 Speed_Measured "Measured motor speed by inverter";
+CM_ SG_ 392 Torque_Measured "Torque calculated by DSP in inverter";
+CM_ SG_ 384 CS_Command1 "Command1 message checksum";
+CM_ SG_ 384 SEQ_Command1 "Command1 message sequence counter";
+CM_ SG_ 384 Torque_Traction_Limit "Max torque calculated by VCM";
+CM_ SG_ 384 ControlWord "Control word that sets inverter mode of operation";
+CM_ SG_ 384 Torque_Request "Motor torque requested by VCM";
+CM_ SG_ 376 CS_Torque "Torque message checksum";
+CM_ SG_ 376 SEQ_Torque "Torque message sequence counter";
+CM_ SG_ 376 DC_Link_Current "Net current flow measured by the inverter";
+CM_ SG_ 376 Speed_Measured "Measured motor speed by inverter";
+CM_ SG_ 376 Torque_Measured "Torque calculated by DSP in inverter";
+CM_ SG_ 368 CS_Command1 "Command1 message checksum";
+CM_ SG_ 368 SEQ_Command1 "Command1 message sequence counter";
+CM_ SG_ 368 Torque_Traction_Limit "Max torque calculated by VCM";
+CM_ SG_ 368 ControlWord "Control word that sets inverter mode of operation";
+CM_ SG_ 368 Torque_Request "Motor torque requested by VCM";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_DEF_DEF_  "BusType" "";
+BA_ "BusType" "CAN";
+BA_ "VFrameFormat" BO_ 1793 0;
+BA_ "VFrameFormat" BO_ 112 0;
+BA_ "VFrameFormat" BO_ 392 0;
+BA_ "VFrameFormat" BO_ 384 0;
+BA_ "VFrameFormat" BO_ 376 0;
+BA_ "VFrameFormat" BO_ 368 0;
+BA_ "VFrameFormat" BO_ 1810 0;
+BA_ "VFrameFormat" BO_ 1813 0;
+BA_ "VFrameFormat" BO_ 1808 0;
+BA_ "VFrameFormat" BO_ 1698 0;
+BA_ "VFrameFormat" BO_ 1670 0;
+BA_ "VFrameFormat" BO_ 1669 0;
+BA_ "VFrameFormat" BO_ 1666 0;
+BA_ "VFrameFormat" BO_ 256 0;
+BA_ "VFrameFormat" BO_ 288 0;
+BA_ "VFrameFormat" BO_ 682 0;
+BA_ "VFrameFormat" BO_ 1186 0;
+BA_ "VFrameFormat" BO_ 672 0;
+BA_ "VFrameFormat" BO_ 324 0;
+BA_ "VFrameFormat" BO_ 340 0;
+BA_ "VFrameFormat" BO_ 338 0;
+BA_ "VFrameFormat" BO_ 81 0;
+
